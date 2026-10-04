@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda - videobelajar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- navbar atas -->
+  <div class="navbar">
+    <div class="logo"><span class="orange">video</span><span class="red">belajar</span></div>
+    <div class="nav-right">
+      <a href="#">Kategori</a>
+      <img class="avatar-img" src="https://i.pravatar.cc/100?img=47" alt="foto profil">
+    </div>
+  </div>
+
+  <!-- hero banner -->
+  <div class="hero">
+    <h1>Revolusi Pembelajaran: Temukan Ilmu Baru melalui Platform Video Interaktif!</h1>
+    <p>Temukan ilmu baru yang menarik dan mendalam melalui koleksi video pembelajaran berkualitas tinggi. Tidak hanya itu, Anda juga bisa berpartisipasi dalam latihan interaktif yang akan meningkatkan pemahaman Anda.</p>
+    <a href="#koleksi" class="btn btn-green">Temukan Video Course untuk Dipelajari</a>
+  </div>
+
+  <!-- koleksi course -->
+  <div class="section page-wrap" id="koleksi">
+    <h2>Koleksi Video Pembelajaran Unggulan</h2>
+    <p class="subtitle">Jelajahi Dunia Pengetahuan Melalui Pilihan Kami</p>
+
+    <div class="category-tabs">
+      <a href="#" class="active" onclick="filterCourse('semua', this); return false;">Semua Kelas</a>
+      <a href="#" onclick="filterCourse('pemasaran', this); return false;">Pemasaran</a>
+      <a href="#" onclick="filterCourse('desain', this); return false;">Desain</a>
+      <a href="#" onclick="filterCourse('pengembangan', this); return false;">Pengembangan Diri</a>
+      <a href="#" onclick="filterCourse('bisnis', this); return false;">Bisnis</a>
+    </div>
+
+    <div class="course-list" id="courseList">
+
+      <div class="course-card" data-category="bisnis">
+        <div class="course-thumb" style="background-image:url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400')"></div>
+        <div class="info">
+          <h3>Big 4 Auditor Financial Analyst</h3>
+          <p class="desc">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...</p>
+          <div class="instructor-row">
+            <img src="https://i.pravatar.cc/100?img=5" alt="instruktur">
+            <div>
+              <div class="name">Jenna Ortega</div>
+              <div class="role">Senior Accountant di Gojek</div>
+            </div>
+          </div>
+          <div class="bottom-row">
+            <span class="rating">&#9733; 3.5 (86)</span>
+            <span class="price">Rp 300K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="pemasaran">
+        <div class="course-thumb" style="background-image:url('https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400')"></div>
+        <div class="info">
+          <h3>Big 4 Auditor Financial Analyst</h3>
+          <p class="desc">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...</p>
+          <div class="instructor-row">
+            <img src="https://i.pravatar.cc/100?img=12" alt="instruktur">
+            <div>
+              <div class="name">Jenna Ortega</div>
+              <div class="role">Senior Accountant di Gojek</div>
+            </div>
+          </div>
+          <div class="bottom-row">
+            <span class="rating">&#9733; 3.5 (86)</span>
+            <span class="price">Rp 300K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="desain">
+        <div class="course-thumb" style="background-image:url('https://images.unsplash.com/photo-1455390582262-044cdead277a?w=401')"></div>
+        <div class="info">
+          <h3>Big 4 Auditor Financial Analyst</h3>
+          <p class="desc">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...</p>
+          <div class="instructor-row">
+            <img src="https://i.pravatar.cc/100?img=20" alt="instruktur">
+            <div>
+              <div class="name">Jenna Ortega</div>
+              <div class="role">Senior Accountant di Gojek</div>
+            </div>
+          </div>
+          <div class="bottom-row">
+            <span class="rating">&#9733; 3.5 (86)</span>
+            <span class="price">Rp 300K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="pengembangan">
+        <div class="course-thumb" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400')"></div>
+        <div class="info">
+          <h3>Big 4 Auditor Financial Analyst</h3>
+          <p class="desc">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...</p>
+          <div class="instructor-row">
+            <img src="https://i.pravatar.cc/100?img=32" alt="instruktur">
+            <div>
+              <div class="name">Jenna Ortega</div>
+              <div class="role">Senior Accountant di Gojek</div>
+            </div>
+          </div>
+          <div class="bottom-row">
+            <span class="rating">&#9733; 3.5 (86)</span>
+            <span class="price">Rp 300K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="bisnis">
+        <div class="course-thumb" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400')"></div>
+        <div class="info">
+          <h3>Big 4 Auditor Financial Analyst</h3>
+          <p class="desc">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...</p>
+          <div class="instructor-row">
+            <img src="https://i.pravatar.cc/100?img=8" alt="instruktur">
+            <div>
+              <div class="name">Jenna Ortega</div>
+              <div class="role">Senior Accountant di Gojek</div>
+            </div>
+          </div>
+          <div class="bottom-row">
+            <span class="rating">&#9733; 3.5 (86)</span>
+            <span class="price">Rp 300K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="pemasaran">
+        <div class="course-thumb" style="background-image:url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400')"></div>
+        <div class="info">
+          <h3>Big 4 Auditor Financial Analyst</h3>
+          <p class="desc">Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...</p>
+          <div class="instructor-row">
+            <img src="https://i.pravatar.cc/100?img=15" alt="instruktur">
+            <div>
+              <div class="name">Jenna Ortega</div>
+              <div class="role">Senior Accountant di Gojek</div>
+            </div>
+          </div>
+          <div class="bottom-row">
+            <span class="rating">&#9733; 3.5 (86)</span>
+            <span class="price">Rp 300K</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- newsletter -->
+  <div class="newsletter">
+    <p class="small-label">NEWSLETTER</p>
+    <h2>Mau Belajar Lebih Banyak?</h2>
+    <p class="desc">Daftarkan dirimu untuk mendapatkan informasi terbaru dan penawaran spesial dari program-program terbaik hariesok.id</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Masukkan Emailmu">
+      <button onclick="alert('Terima kasih sudah subscribe!')">Subscribe</button>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="logo"><span class="orange">video</span><span class="red">belajar</span></div>
+        <p>Gali Potensi Anda Melalui Pembelajaran<br>Video di hariesok.id</p>
+        <p>Jl. Usman Effendi No. 50 Lowokwaru, Malang<br>+62-877-7123-1234</p>
+      </div>
+      <div class="footer-col">
+        <h4>Kategori</h4>
+        <a href="#">Digital & Teknologi</a>
+        <a href="#">Pemasaran</a>
+        <a href="#">Manajemen Bisnis</a>
+        <a href="#">Pengembangan Diri</a>
+        <a href="#">Desain</a>
+      </div>
+      <div class="footer-col">
+        <h4>Perusahaan</h4>
+        <a href="#">Tentang Kami</a>
+        <a href="#">FAQ</a>
+        <a href="#">Kebijakan Privasi</a>
+        <a href="#">Ketentuan Layanan</a>
+        <a href="#">Bantuan</a>
+      </div>
+      <div class="footer-col">
+        <h4>Komunitas</h4>
+        <a href="#">Tips Sukses</a>
+        <a href="#">Blog</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy;2023 Gerobak Sayur. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script>
+    // fungsi sederhana buat filter course berdasarkan kategori NOTE: SEBENARNYA BELUM PAHAM JS, JADI INI DARI CLAUDE
+    function filterCourse(category, link) {
+      // ganti tab yang aktif
+      var allTabs = document.querySelectorAll('.category-tabs a');
+      for (var i = 0; i < allTabs.length; i++) {
+        allTabs[i].classList.remove('active');
+      }
+      link.classList.add('active');
+
+      // tampilkan atau sembunyikan course sesuai kategori
+      var allCourses = document.querySelectorAll('.course-card');
+      for (var i = 0; i < allCourses.length; i++) {
+        var course = allCourses[i];
+        if (category === 'semua' || course.getAttribute('data-category') === category) {
+          course.style.display = 'block';
+        } else {
+          course.style.display = 'none';
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
